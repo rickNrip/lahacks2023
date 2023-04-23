@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/studentScreenData/studentNav.dart';
+import 'package:flutter_application_2/student%20home%20screen/studentNav.dart';
 
 class addWater extends StatelessWidget {
   addWater({super.key});

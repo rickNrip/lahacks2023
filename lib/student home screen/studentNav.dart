@@ -3,15 +3,15 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_application_2/home.dart';
 import 'package:flutter_application_2/main.dart';
-import 'package:flutter_application_2/studentScreenData/studentAddWidgets.dart';
+import 'package:flutter_application_2/student%20home%20screen/studentAddWidgets.dart';
 import 'package:flutter_application_2/studentScreenData/student_notes/models/datanotes.dart';
 import 'package:flutter_application_2/studentScreenData/student_notes/widgets/notes-list.dart';
 import 'package:new_gradient_app_bar/new_gradient_app_bar.dart';
 import 'dataStudentWidget.dart';
 import '../studentQuiz/quizstud.dart';
-import './waterCups.dart';
-import './student_notes/studentNotes.dart';
-import './student_notes/addnotes.dart';
+import 'waterCups.dart';
+import '../studentScreenData/student_notes/studentNotes.dart';
+import '../studentScreenData/student_notes/addnotes.dart';
 
 class studentNav extends StatelessWidget {
   const studentNav({super.key});
@@ -212,16 +212,7 @@ class studentNav extends StatelessWidget {
         ),
         body: Container(
           width: double.infinity,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'You ate this many cals!',
-                style: TextStyle(fontSize: 30),
-              ),
-              calData('.'),
-            ],
-          ),
+          child: Column(),
           decoration: const BoxDecoration(
               gradient: LinearGradient(colors: [
             Color.fromARGB(227, 244, 54, 54),

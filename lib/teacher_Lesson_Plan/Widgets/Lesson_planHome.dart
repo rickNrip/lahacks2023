@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_application_2/teacher_Lesson_Plan/Widgets/new_lesson.dart';
 import 'package:new_gradient_app_bar/new_gradient_app_bar.dart';
 import 'LessonMain.dart';
 import 'package:flutter_application_2/teacher_Lesson_Plan/Model/Lesson.dart';
@@ -24,10 +25,28 @@ class _lessonPlanHomeState extends State<lessonPlanHome> {
         date: DateTime.now()),
   ];
 
+  _openAddLessonOverlay() {
+    showModalBottomSheet(
+        context: context,
+        builder: ((context) {
+          return newLesson(onAddLesson: _addData);
+        }));
+  }
+
+  void _addData(Lesson lesson) {
+    setState(() {
+      _registeredLesson.add(lesson);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: NewGradientAppBar(
+        actions: [
+          IconButton(
+              onPressed: _openAddLessonOverlay, icon: const Icon(Icons.add))
+        ],
         title: Text('Lesson Plan'),
         gradient: LinearGradient(
           colors: [Colors.blue, Colors.purple],

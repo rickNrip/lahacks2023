@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/teacherview.dart';
-import 'package:flutter_application_2/studentScreenData/studentNav.dart';
+import 'package:flutter_application_2/TeacherHomeScreen/teacherview.dart';
+import 'package:flutter_application_2/student%20home%20screen/studentNav.dart';
 
 void main() {
   runApp(const MaterialApp(

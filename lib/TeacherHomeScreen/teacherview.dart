@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_application_2/studentScreenData/studentAddWidgets.dart';
+import 'package:flutter_application_2/TeacherHomeScreen/homeScreenMiddle.dart';
+import 'package:flutter_application_2/student%20home%20screen/studentAddWidgets.dart';
 import 'package:flutter_application_2/main.dart';
 import 'package:flutter_application_2/teacher_Lesson_Plan/Widgets/LessonMain.dart';
 import 'package:new_gradient_app_bar/new_gradient_app_bar.dart';
@@ -36,70 +37,75 @@ class teacherView extends StatelessWidget {
               borderRadius: BorderRadius.vertical(bottom: Radius.circular(20))),
         ),
         body: Container(
+          width: double.infinity,
           decoration: const BoxDecoration(
               gradient: LinearGradient(
                   colors: [Colors.blue, Colors.purple],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight)),
+          child: studentCard(),
         ),
         drawer: Drawer(
-          child: ListView(
-            children: [
-              UserAccountsDrawerHeader(
-                accountEmail: Text('studntes.org'),
-                accountName: Text('Ricky Bailey'),
-                currentAccountPicture: CircleAvatar(
-                    foregroundImage: AssetImage("images/IMG_0596.jpeg")),
-              ),
-              ListTile(
-                leading: Icon(Icons.menu_book),
-                title: Text('Lesson Plan'),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => mainLesson()),
-                  );
-                },
-              ),
-              ListTile(
-                leading: Icon(Icons.book),
-                title: Text('Notes'),
-                onTap: () {},
-              ),
-              ListTile(
-                leading: Icon(Icons.article),
-                title: Text('Assignment'),
-                onTap: () {},
-              ),
-              ListTile(
-                leading: Icon(Icons.quiz),
-                title: Text('Create a Quiz'),
-                onTap: () {},
-              ),
-              Padding(
-                padding: const EdgeInsets.all(40.0),
-                child: Text('Labes'),
-              ),
-              ListTile(
-                leading: Icon(Icons.sports_gymnastics),
-                title: Text('WorkOuts'),
-                onTap: () {},
-              ),
-              ListTile(
-                leading: Icon(Icons.apple),
-                title: Text('Healthy Food'),
-                onTap: () {},
-              ),
-              ListTile(
-                  leading: Icon(Icons.logout),
-                  title: Text('LogOut'),
+          child: Padding(
+            padding: EdgeInsets.all(0),
+            child: ListView(
+              children: [
+                UserAccountsDrawerHeader(
+                  accountEmail: Text('studntes.org'),
+                  accountName: Text('Ricky Bailey'),
+                  currentAccountPicture: CircleAvatar(
+                      foregroundImage: AssetImage("images/IMG_0596.jpeg")),
+                ),
+                ListTile(
+                  leading: Icon(Icons.menu_book),
+                  title: Text('Lesson Plan'),
                   onTap: () {
-                    onPressed:
-                    () {
-                      Navigator.pop(context);
-                    };
-                  }),
-            ],
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => mainLesson()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: Icon(Icons.book),
+                  title: Text('Notes'),
+                  onTap: () {},
+                ),
+                ListTile(
+                  leading: Icon(Icons.article),
+                  title: Text('Assignment'),
+                  onTap: () {},
+                ),
+                ListTile(
+                  leading: Icon(Icons.quiz),
+                  title: Text('Create a Quiz'),
+                  onTap: () {},
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(40.0),
+                  child: Text('Labes'),
+                ),
+                ListTile(
+                  leading: Icon(Icons.sports_gymnastics),
+                  title: Text('WorkOuts'),
+                  onTap: () {},
+                ),
+                ListTile(
+                  leading: Icon(Icons.apple),
+                  title: Text('Healthy Food'),
+                  onTap: () {},
+                ),
+                ListTile(
+                    leading: Icon(Icons.logout),
+                    title: Text('LogOut'),
+                    onTap: () {
+                      onPressed:
+                      () {
+                        Navigator.pop(context);
+                      };
+                    }),
+              ],
+            ),
           ),
         ),
         bottomNavigationBar: BottomAppBar(
@@ -150,8 +156,9 @@ class teacherView extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       IconButton(
-                        color: Colors.white,
-                        onPressed: () {}(),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
                         icon: Icon(Icons.logout),
                       ),
                       Text(
