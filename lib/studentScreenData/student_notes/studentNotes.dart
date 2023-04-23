@@ -49,7 +49,6 @@ class _viewNotesState extends State<viewNotes> {
                 end: Alignment.bottomRight)),
         child: Column(
           children: [
-            Text('data'),
             Expanded(child: noteDisplay(dataStudent: _registeredNotes))
           ],
         ),
