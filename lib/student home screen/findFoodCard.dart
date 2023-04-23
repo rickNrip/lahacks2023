@@ -12,7 +12,7 @@ class findFoodCard extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(
-            children: [
+            children: const [
               Text('45 E Alpine St', style: TextStyle(fontSize: 20)),
               SizedBox(
                 width: 20,
@@ -24,7 +24,7 @@ class findFoodCard extends StatelessWidget {
               Icon(Icons.location_on)
             ],
           ),
-          Text(
+          const Text(
             'Open from 10am to 6pm',
             style: TextStyle(fontSize: 15),
           )

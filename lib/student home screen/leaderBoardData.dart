@@ -14,7 +14,7 @@ class cardLeader extends StatelessWidget {
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+              children: const [
                 Text(
                   'Ricky Bailey',
                   style: TextStyle(fontSize: 20),
@@ -26,7 +26,7 @@ class cardLeader extends StatelessWidget {
               ],
             ),
             Row(
-              children: [
+              children: const [
                 Text(
                   'Points:',
                   style: TextStyle(fontSize: 20),
@@ -55,7 +55,7 @@ class cardOther extends StatelessWidget {
         children: [
           Text('The Rest Of My Team'),
           Row(
-            children: [
+            children: const [
               Text(
                 'Points:',
                 style: TextStyle(fontSize: 20),

@@ -14,9 +14,7 @@ class _studentCardState extends State<studentCard> {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      children: [
-        cardStudents(),
-        cardStudents(),
+      children: const [
         cardStudents(),
         cardStudents(),
         cardStudents(),

@@ -25,9 +25,9 @@ class aiChat extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.end,
-            children: [
+            children: const [
               Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: EdgeInsets.all(16.0),
                 child: TextField(
                     decoration: InputDecoration(
                   labelText: 'Ask me about food!',

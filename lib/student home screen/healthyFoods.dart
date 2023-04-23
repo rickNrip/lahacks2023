@@ -24,7 +24,7 @@ class healthyFoods extends StatelessWidget {
             Color.fromARGB(255, 233, 30, 209)
           ], begin: Alignment.topLeft, end: Alignment.bottomRight)),
           child: ListView(
-            children: [findFoodCard()],
+            children: const [findFoodCard()],
           )),
     );
   }

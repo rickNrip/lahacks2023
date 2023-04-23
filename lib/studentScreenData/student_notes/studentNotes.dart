@@ -15,12 +15,12 @@ class viewNotes extends StatefulWidget {
 class _viewNotesState extends State<viewNotes> {
   final List<dataNotes> _registeredNotes = [
     dataNotes(
-        title: 'Monday',
+        title: 'day.now',
         date: DateTime.now(),
         noteStudent: 'I ate an apple',
         category: Categorys.food),
     dataNotes(
-        title: 'Monday',
+        title: 'day.now',
         date: DateTime.now(),
         noteStudent: 'I did 40 push ups',
         category: Categorys.workout),

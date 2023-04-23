@@ -43,14 +43,14 @@ class teacherView extends StatelessWidget {
                   colors: [Colors.blue, Colors.purple],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight)),
-          child: studentCard(),
+          child: const studentCard(),
         ),
         drawer: Drawer(
           child: Padding(
-            padding: EdgeInsets.all(0),
+            padding: const EdgeInsets.all(0),
             child: ListView(
               children: [
-                UserAccountsDrawerHeader(
+                const UserAccountsDrawerHeader(
                   accountEmail: Text('studntes.org'),
                   accountName: Text('Ricky Bailey'),
                   currentAccountPicture: CircleAvatar(
@@ -81,9 +81,9 @@ class teacherView extends StatelessWidget {
                   title: Text('Create a Quiz'),
                   onTap: () {},
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(40.0),
-                  child: Text('Labes'),
+                const Padding(
+                  padding: EdgeInsets.all(40.0),
+                  child: Text('Lables'),
                 ),
                 ListTile(
                   leading: Icon(Icons.sports_gymnastics),
@@ -109,7 +109,7 @@ class teacherView extends StatelessWidget {
           ),
         ),
         bottomNavigationBar: BottomAppBar(
-            color: Color.fromARGB(197, 31, 131, 231),
+            color: const Color.fromARGB(197, 31, 131, 231),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               mainAxisSize: MainAxisSize.max,
@@ -124,7 +124,7 @@ class teacherView extends StatelessWidget {
                         onPressed: () {},
                         icon: Icon(Icons.chat),
                       ),
-                      Text(
+                      const Text(
                         'AI Chat',
                         style: TextStyle(fontSize: 15.0),
                       ),
@@ -137,7 +137,7 @@ class teacherView extends StatelessWidget {
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
+                    children: const [
                       Icon(
                         Icons.class_,
                         color: Colors.white,
@@ -161,7 +161,7 @@ class teacherView extends StatelessWidget {
                         },
                         icon: Icon(Icons.logout),
                       ),
-                      Text(
+                      const Text(
                         'LogOut',
                         style: TextStyle(fontSize: 15.0),
                       ),

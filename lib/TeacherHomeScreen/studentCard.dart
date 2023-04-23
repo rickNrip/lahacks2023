@@ -28,7 +28,7 @@ class _cardStudentsState extends State<cardStudents> {
     return Card(
       child: Column(
         children: [
-          Text(
+          const Text(
             'First Name, Last Name',
             style: TextStyle(fontSize: 20),
           ),
@@ -38,11 +38,11 @@ class _cardStudentsState extends State<cardStudents> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Text('Water cups: 2'),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 Text('Calories: 500'),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 IconButton(
@@ -53,7 +53,7 @@ class _cardStudentsState extends State<cardStudents> {
                       );
                     }),
                     icon: Icon(Icons.library_books)),
-                Text('Notes'),
+                const Text('Notes'),
               ],
             ),
           )

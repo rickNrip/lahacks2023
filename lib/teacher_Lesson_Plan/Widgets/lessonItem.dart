@@ -21,12 +21,12 @@ class lessonItem extends StatelessWidget {
                 const SizedBox(
                   height: 5,
                 ),
-                Text('Chapter content'),
+                const Text('Chapter content'),
                 Text(lesson.lesson),
                 const SizedBox(
                   height: 20,
                 ),
-                Text('Activty'),
+                const Text('Activty'),
                 Text(lesson.activity)
               ],
             )));

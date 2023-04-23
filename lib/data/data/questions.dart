@@ -47,12 +47,12 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    'What is the Healthiest food option',
+    'What is the Best Hackaton',
     [
-      'Apple',
-      'Chips',
-      'Candy',
-      'Sugar',
+      'LA hacks',
+      'filler',
+      'filler',
+      'lol',
     ],
   ),
 ];

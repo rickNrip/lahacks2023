@@ -14,12 +14,12 @@ class startQuiz extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(
+          const Icon(
             Icons.apple,
             size: 100,
             color: Color.fromARGB(187, 255, 235, 59),
           ),
-          Text(
+          const Text(
             'Start Quiz here',
             style: TextStyle(
               fontSize: 30,
@@ -27,14 +27,14 @@ class startQuiz extends StatelessWidget {
             ),
           ),
           Text('Chapter 1 assigned by your instructor'),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           OutlinedButton(
               onPressed: (() {
                 startStudQuiz();
               }),
-              child: Text(
+              child: const Text(
                 'START',
                 style: TextStyle(
                     fontSize: 40, color: Color.fromARGB(166, 255, 235, 59)),

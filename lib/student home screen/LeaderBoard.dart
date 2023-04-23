@@ -17,7 +17,7 @@ class leaderBoardMain extends StatelessWidget {
         ),
       ),
       body: ListView(
-        children: [cardLeader(), cardOther(), cardOther(), cardOther()],
+        children: const [cardLeader(), cardOther(), cardOther(), cardOther()],
       ),
     );
   }

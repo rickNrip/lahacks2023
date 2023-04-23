@@ -36,7 +36,7 @@ class _questionsQuizState extends State<questionsQuiz> {
               fontWeight: FontWeight.bold,
               color: Color.fromARGB(220, 255, 255, 255)),
         ),
-        SizedBox(
+        const SizedBox(
           height: 30,
         ),
         ...currentQuestion.getShuffledAnswers().map((answer) {
