@@ -163,11 +163,6 @@ class studentNav extends StatelessWidget {
                     foregroundImage: AssetImage("images/IMG_0596.jpeg")),
               ),
               ListTile(
-                leading: const Icon(Icons.home),
-                title: const Text('Home'),
-                onTap: () {},
-              ),
-              ListTile(
                 leading: const Icon(Icons.book),
                 title: const Text('Notes'),
                 onTap: () {
@@ -194,7 +189,7 @@ class studentNav extends StatelessWidget {
               ),
               const Padding(
                 padding: EdgeInsets.all(40.0),
-                child: Text('Labes'),
+                child: Text('Lables'),
               ),
               ListTile(
                 leading: const Icon(Icons.sports_gymnastics),
